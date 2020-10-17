@@ -1,9 +1,74 @@
 *{
-  color: white;
-  
+  margin: 0;
+  padding: 0;
 }
-@font-face{
-  font-family: "Open Sans";
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.container .section{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container .section:nth-child(1){
+  background: url(https://cdn.aarp.net/content/dam/aarp/health/drugs_supplements/2019/08/1140-med-marijuana-caduceus.imgcache.rev873985b7234d2a2df9a09f5cefacea57.jpg);
+  background-size:cover ;
+  background-attachment: fixed;
+}
+
+.container .section:nth-child(1) p{
+  color: aliceblue;
+  background-color: black;
+  opacity: 50%;
+}
+.container .section:nth-child(2){
+  background: url(https://www.rollingstone.com/wp-content/uploads/2019/08/vape-pens-marijuana.jpg);
+  background-size:cover ;
+  background-attachment: fixed;
+}
+.container .section:nth-child(3){
+  background: url(https://post.healthline.com/wp-content/uploads/2020/01/Weed_Gummies_1200x628-facebook.jpg);
+  background-size:cover ;
+  background-attachment: fixed;
+}
+.container .section:nth-child(4){
+  background: url(https://moderncann.com/wp-content/uploads/2020/05/concentrates-web-image-5-1024x393.jpg);
+  background-size:cover ;
+  background-attachment: fixed;
+}
+/* .container .section:nth-child(5){
+  background: url();
+  background-size:cover ;
+  background-attachment: fixed;
+}
+.container .section:nth-child(6){
+  background: url();
+  background-size:cover ;
+  background-attachment: fixed;
+}
+.container .section:nth-child(7){
+  background: url();
+  background-size:cover ;
+  background-attachment: fixed;
+} */
+
+/* .budBio, .effects, .thcContent, .cbdContent, .genetics{
+  margin: 2.5%;
+  color: white;
+  background-color: black;
+} */
+
+.content{
+  display: flex;
+  flex-direction: column;
+  /* padding:; */
+  /* margin: 10%; */
 }
 
 body{
@@ -12,60 +77,6 @@ body{
   background-size: cover;
 }
 
-.dropbutton {
-  background-color: #059033;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  opacity:50%;
-  color: black;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #059033
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #7BAA47;
-}
-
-.logo{
-  color: white;
-}
-
-header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
 #logo{
   position: fixed;
   bottom: 0;
@@ -73,21 +84,51 @@ header{
   height: 20%;
 }
 
-@font-face {
-  font-family: 'Gloria Hallelujah';
-  src: url(Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
+.budBio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  font-size: 1.1rem;
+  color: aliceblue;
 }
-
-h1{
-  font-family: 'Gloria Hallelujah';
+.content img{
+  height: 70vh;
+  width: 100%;
 }
-
-#sectionPic1{
-  background-image: url(https://leafly-cms-production.imgix.net/wp-content/uploads/2016/11/03142505/what-is-a-grinder-how-do-you-use-it.jpg);
-  height: 100vh;
+.picWords{
+  position: relative;
   text-align: center;
+  color: white;
+}
+
+.picWords img{
+  width: 100%;
+}
+.picWords h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-transform: uppercase; */
+  text-transform: none;
+} 
+.picWords h3{
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-transform: uppercase; */
+} 
+
+h2{
   text-transform: uppercase;
 }
 
-.sectionTitle{
+/* nav{
+  background-color: aliceblue;
+} */
+img{
+  width: 100#;
 }
