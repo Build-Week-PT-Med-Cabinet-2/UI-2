@@ -42,8 +42,8 @@
   background-size:cover ;
   background-attachment: fixed;
 }
-/* .container .section:nth-child(5){
-  background: url();
+.container .section:nth-child(5){
+  background: url(https://herb-platform-images.imgix.net/wp-content/uploads/2019/08/08150557/Is_Your_Plant_1.jpg?auto=format&fit=clip&q=60&ixlib=react-8.6.4&w=768);
   background-size:cover ;
   background-attachment: fixed;
 }
@@ -56,7 +56,7 @@
   background: url();
   background-size:cover ;
   background-attachment: fixed;
-} */
+}
 
 /* .budBio, .effects, .thcContent, .cbdContent, .genetics{
   margin: 2.5%;
