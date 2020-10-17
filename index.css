@@ -1,6 +1,9 @@
-
 *{
   color: white;
+  
+}
+@font-face{
+  font-family: "Open Sans";
 }
 
 body{
@@ -62,3 +65,19 @@ header{
   align-items: center;
 }
 
+
+#logo{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 20%;
+}
+
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url(Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
+}
+
+h1{
+  font-family: 'Gloria Hallelujah';
+}

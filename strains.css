@@ -21,6 +21,13 @@
   background-size:cover ;
   background-attachment: fixed;
 }
+
+.container .section:nth-child(1) p{
+  color: aliceblue;
+  background-color: black;
+  opacity: 50%;
+}
+
 .container .section:nth-child(2){
   background: url(https://i49.net/wp-content/uploads/2019/02/Trainwreck-Seeds.png);
   background-size:cover ;
@@ -78,4 +85,17 @@
   flex-direction: column;
   /* padding:; */
   /* margin: 10%; */
+}
+
+body{
+  background-image: url(https://64.media.tumblr.com/5d1fc34a1c44ce114ae83353bcfce5a6/tumblr_pmd6e6Ol7y1runoqyo1_540.gifv);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 20%;
 }
