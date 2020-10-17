@@ -81,3 +81,13 @@ header{
 h1{
   font-family: 'Gloria Hallelujah';
 }
+
+#sectionPic1{
+  background-image: url(https://leafly-cms-production.imgix.net/wp-content/uploads/2016/11/03142505/what-is-a-grinder-how-do-you-use-it.jpg);
+  height: 100vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sectionTitle{
+}
