@@ -1,135 +1,237 @@
 *{
+  color: #fff;
+}
+
+body{
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  background-color: #000;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 2%;
+  
+}
+header.sticky{
+  padding: 5px 100px;
+  background: #fff;
+}
+
+header .logo{
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  z-index: 100000;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-right: 4%;
+}
+
+header ul li{
+  position: relative;
+  list-style: none;
+}
+
+header ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+header ul li a:hover{
+  font-size: 30px;
+  transition: 1.5s;
+  /* border: solid white 1px;
+  border-radius: 25% ;
+  background-color: #fff;
+  color: #000; */
+}
+
+h1, h6{
+  color: #000;
+}
+
+
+.banner{
+  position: relative;
+  width: 100%;
+  width: 100vh;
+
 }
 
 .container{
   position: relative;
+  overflow: hidden;
   width: 100%;
-  height: 100vh;
-  overflow: auto;
+  height: 80vh;
+  /* margin-top: 1rem; */
 }
 
-.container .section{
-  position: relative;
-  width: 100%;
+.container .slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
   height: 100%;
+  float: left;
+  animation: animate 10s linear infinite;
 }
 
-.container .section:nth-child(1){
-  background: url(https://cdn.aarp.net/content/dam/aarp/health/drugs_supplements/2019/08/1140-med-marijuana-caduceus.imgcache.rev873985b7234d2a2df9a09f5cefacea57.jpg);
-  background-size:cover ;
-  background-attachment: fixed;
-}
-
-.container .section:nth-child(1) p{
-  color: aliceblue;
-  background-color: black;
-  opacity: 50%;
-}
-.container .section:nth-child(2){
-  background: url(https://www.rollingstone.com/wp-content/uploads/2019/08/vape-pens-marijuana.jpg);
-  background-size:cover ;
-  background-attachment: fixed;
-}
-.container .section:nth-child(3){
-  background: url(https://post.healthline.com/wp-content/uploads/2020/01/Weed_Gummies_1200x628-facebook.jpg);
-  background-size:cover ;
-  background-attachment: fixed;
-}
-.container .section:nth-child(4){
-  background: url(https://moderncann.com/wp-content/uploads/2020/05/concentrates-web-image-5-1024x393.jpg);
-  background-size:cover ;
-  background-attachment: fixed;
-}
-.container .section:nth-child(5){
-  background: url(https://herb-platform-images.imgix.net/wp-content/uploads/2019/08/08150557/Is_Your_Plant_1.jpg?auto=format&fit=clip&q=60&ixlib=react-8.6.4&w=768);
-  background-size:cover ;
-  background-attachment: fixed;
-}
-.container .section:nth-child(6){
-  background: url();
-  background-size:cover ;
-  background-attachment: fixed;
-}
-.container .section:nth-child(7){
-  background: url();
-  background-size:cover ;
-  background-attachment: fixed;
-}
-
-/* .budBio, .effects, .thcContent, .cbdContent, .genetics{
-  margin: 2.5%;
-  color: white;
-  background-color: black;
-} */
-
-.content{
-  display: flex;
-  flex-direction: column;
-  /* padding:; */
-  /* margin: 10%; */
-}
-
-body{
-  background-image: url(https://64.media.tumblr.com/5d1fc34a1c44ce114ae83353bcfce5a6/tumblr_pmd6e6Ol7y1runoqyo1_540.gifv);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#logo{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 20%;
-}
-
-.budBio{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10vh;
-  font-size: 1.1rem;
-  color: aliceblue;
-}
-.content img{
-  height: 70vh;
-  width: 100%;
-}
-.picWords{
+.container .slider .slide{
   position: relative;
-  text-align: center;
-  color: white;
+  width: 20%;
+  height: 100%;
+  float: left;
 }
 
-.picWords img{
-  width: 100%;
-}
-.picWords h2{
+.container .slider .slide .caption{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* text-transform: uppercase; */
-  text-transform: none;
-} 
-.picWords h3{
-  color: black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* text-transform: uppercase; */
-} 
-
-h2{
-  text-transform: uppercase;
-  -webkit-text-stroke: 1.5px black
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.5);
+  transition: 0.5s;
 }
 
-/* nav{
-  background-color: aliceblue;
-} */
-img{
-  width: 100#;
+.container .slider .slide .caption h2{
+  margin: 0 0 20px;
+  padding: 0;
+  color: #fff;
+  font-size: 48px;;
+  transition: 0.5s;
 }
+
+.container .slider .slide .caption p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;;
+  transition: 0.5s;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-between;
+  /* list-style-image: url(pics/bud.png); */
+  list-style-type: none
+}
+
+
+/* slides */
+
+.container .slider .slide.slide1{
+  background:url(https://www.marijuanadoctors.com/wp-content/uploads/2020/08/Oklahoma-Medical-Marijuanas-Different-Approach-marijuana-doctors-1.jpg) ;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide2{
+  background:url(https://leafly-cms-production.imgix.net/wp-content/uploads/2016/11/03142505/what-is-a-grinder-how-do-you-use-it.jpg) ;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide3{
+  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0yIrVzfS93OvG8Dwgst1zhSnrkLadrfq85A&usqp=CAU) ;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide4{
+  background:url(https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2019/12/thc-vape-massachusetts-fb.jpg) ;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide5{
+  background:url(https://3ncb884ou5e49t9eb3fpeur1-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/Oregon-Edibles3840-1024x640.jpg) ;
+  background-size: cover;
+  background-position: center;
+}
+p{
+  -webkit-text-stroke: 1px white ;
+}
+
+/* slides animation */
+
+@keyframes animate {
+  0% {
+    left: 0; 
+  }
+  15% {
+    left: 0; 
+  }
+  20% {
+    left: -100%; 
+  }
+  35% {
+    left: -100%; 
+  }
+  40% {
+    left: -200%; 
+  }
+  55% {
+    left: -200%; 
+  }
+  60% {
+    left: -300%; 
+  }
+  75% {
+    left: -300%; 
+  }
+  80% {
+    left: -400%; 
+  }
+  95% {
+    left: -400%; 
+  }
+  100% {
+    left: -500%; 
+  }
+  }
+
+  @media (max-width: 768px){
+    
+
+    .container .slider .slide .caption{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 20px;
+    }
+    
+    .container .slider .slide .caption h2{
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+    
+    .container .slider .slide .caption p{
+      font-size: 16px;
+    }
+  }
+
