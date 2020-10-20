@@ -136,7 +136,7 @@ h1, h6{
 footer ul{
   display: flex;
   justify-content: space-between;
-  /* list-style-image: url(pics/bud.png); */
+  /* list-style-image: giurl(pics/bud.png); */
   list-style-type: none
 }
 
